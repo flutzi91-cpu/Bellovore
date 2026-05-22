@@ -4,8 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node server.mjs 5177",
-    "start": "node server.mjs 5177",
-    "check": "node --check app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "node --check public/app.js"
+  },
+  "dependencies": {
+    "next": "^16.2.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
