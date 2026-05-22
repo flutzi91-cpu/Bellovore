@@ -1,0 +1,11 @@
+{
+  "name": "bellovore-cinematic-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs 5177",
+    "start": "node server.mjs 5177",
+    "check": "node --check app.js"
+  }
+}

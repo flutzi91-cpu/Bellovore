@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bellovore Cinematic Portal</title>
+    <meta
+      name="description"
+      content="A full cinematic 3D portal concept for the Bellovore universe."
+    />
+    <link rel="preload" as="image" href="./assets/intro-gateway.webp" />
+    <link rel="preload" as="image" href="./assets/emblem.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="intro-active">
+    <div class="cursor-aura" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+
+    <div class="cinematic-intro" data-intro>
+      <div class="intro-bg" aria-hidden="true"></div>
+      <div class="intro-rift" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="intro-content">
+        <img src="./assets/emblem.png" alt="" />
+        <p>The seal is listening</p>
+        <h1>Bellovore</h1>
+        <div class="intro-actions" aria-label="Choose your path">
+          <button class="intro-enter" type="button" data-enter>
+            <span>Open The Gate</span>
+          </button>
+          <button type="button" data-intro-jump="#engine">Explore Realms</button>
+          <button type="button" data-intro-jump="#echo">Ask The Echo</button>
+          <button type="button" data-intro-jump="#teaser">Watch Teaser</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand-link" href="#top" data-scroll>
+          <img src="./assets/emblem.png" alt="" width="48" height="44" />
+          <span>
+            <strong>Bellovore</strong>
+            <small>THE ARCHITECT OF TIME</small>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#top" data-scroll>Portal</a>
+          <a href="#odyssey" data-scroll>Saga</a>
+          <a href="#director" data-scroll>Director</a>
+          <a href="#engine" data-scroll>Realms</a>
+          <a href="#characters" data-scroll>Characters</a>
+          <a href="#character-theater" data-scroll>Codex</a>
+          <a href="#echo" data-scroll>Echo</a>
+          <a href="#teaser" data-scroll>Teaser</a>
+        </div>
+
+        <div class="nav-tools">
+          <button class="design-toggle" type="button" aria-pressed="false" data-design-toggle>
+            Archive Mode
+          </button>
+          <button class="sound-toggle" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9v6h4l5 4V5L8 9H4Z" />
+              <path d="m17 9 4 6m0-6-4 6" />
+            </svg>
+            <span>Sound Off</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="top" class="hero" data-scene>
+        <canvas class="dust-canvas" aria-hidden="true"></canvas>
+        <video
+          class="hero-video"
+          src="./media/bellovore-teaser.mp4"
+          poster="./assets/intro-gateway.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+
+        <div class="hero-stage" aria-hidden="true">
+          <img class="depth depth-back" src="./assets/intro-gateway.webp" alt="" />
+          <div class="depth star-map"></div>
+          <div class="depth light-scan"></div>
+          <div class="depth temporal-grid"></div>
+          <div class="depth title-eclipse"></div>
+          <div class="portal-core">
+            <div class="portal-glow"></div>
+            <div class="portal-ring ring-a"></div>
+            <div class="portal-ring ring-b"></div>
+            <div class="portal-ring ring-c"></div>
+            <img src="./assets/emblem.png" alt="" />
+          </div>
+        </div>
+
+        <div class="chapter-strip" aria-hidden="true">
+          <span>Portal Ignition</span>
+          <span>Archive Descent</span>
+          <span>World Engine</span>
+          <span>Echo Signal</span>
+        </div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Volume I is sealed</p>
+          <h1>The Architect of Time</h1>
+          <p class="hero-line">
+            A universe portal built like a trailer: light, time, memory, and
+            the cost of opening the first fragment.
+          </p>
+          <div class="hero-actions">
+            <a class="button solid" href="#odyssey" data-scroll>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="m15.8 8.2-1.6 4.8-4.8 1.6 1.6-4.8 4.8-1.6Z" />
+              </svg>
+              <span>Enter The Saga</span>
+            </a>
+            <button class="button ghost" type="button" data-open-teaser>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7L8 5Z" />
+              </svg>
+              <span>Watch Teaser</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="scene-rail" aria-label="Story beats">
+          <span class="is-active">I Portal</span>
+          <span>II Archive</span>
+          <span>III Worlds</span>
+          <span>IV Echo</span>
+        </aside>
+      </section>
+
+      <section id="odyssey" class="odyssey-section">
+        <div class="odyssey-bg" aria-hidden="true"></div>
+        <div class="section-copy reveal">
+          <p class="eyebrow">The Saga</p>
+          <h2>The homepage becomes a cinematic descent.</h2>
+          <p>
+            Scroll does not simply move down a page. It pulls the visitor
+            through a sealed archive, a temporal hall, and the first living
+            fractures of Bellovore.
+          </p>
+        </div>
+
+        <div class="shot-grid">
+          <article class="shot-card reveal tilt-card">
+            <img src="./assets/temporal-hall.webp" alt="Temporal hall" />
+            <span>01</span>
+            <h3>The Archive Opens</h3>
+          </article>
+          <article class="shot-card reveal tilt-card">
+            <img src="./assets/sealed-book.webp" alt="Sealed book" />
+            <span>02</span>
+            <h3>Volume I Responds</h3>
+          </article>
+          <article class="shot-card reveal tilt-card">
+            <img src="./assets/forge.webp" alt="Bellovore forge" />
+            <span>03</span>
+            <h3>The Forge Waits</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="director" class="director-section">
+        <div class="director-head reveal">
+          <p class="eyebrow">Director's Cut</p>
+          <h2>Make Bellovore feel authored, not decorated.</h2>
+          <p>
+            The strongest version of the site should behave like a mythic
+            control room: cinematic on entry, precise when exploring lore, and
+            ritualistic when asking for access.
+          </p>
+        </div>
+
+        <div class="director-grid">
+          <article class="director-card reveal">
+            <span>01</span>
+            <h3>Custom Hero Plate</h3>
+            <p>Use a clean portal image without embedded typography so the brand title can breathe.</p>
+          </article>
+          <article class="director-card reveal">
+            <span>02</span>
+            <h3>Trailer Scroll</h3>
+            <p>Scene transitions should feel like a camera entering the archive, not page blocks stacking.</p>
+          </article>
+          <article class="director-card reveal">
+            <span>03</span>
+            <h3>Lore Oracle</h3>
+            <p>Echo becomes a shareable experience: ask, receive a fragment, save the signal.</p>
+          </article>
+          <article class="director-card reveal">
+            <span>04</span>
+            <h3>Relic Commerce</h3>
+            <p>The Forge should preview books, prints, symbols, editions, and sealed drops.</p>
+          </article>
+        </div>
+
+        <div class="timeline-console reveal" aria-label="Bellovore cinematic roadmap">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <article>
+            <span>Now</span>
+            <strong>Portal Opens</strong>
+            <p>First cinematic entry and signup ritual.</p>
+          </article>
+          <article>
+            <span>Next</span>
+            <strong>Echo Expands</strong>
+            <p>Fragment responses tied to lore categories.</p>
+          </article>
+          <article>
+            <span>Volume I</span>
+            <strong>Genesis of Time</strong>
+            <p>Book page, cover reveal, preorder path.</p>
+          </article>
+          <article>
+            <span>Forge</span>
+            <strong>Relic Drops</strong>
+            <p>Collector editions and symbolic objects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="engine" class="engine-section">
+        <div class="engine-copy reveal">
+          <p class="eyebrow">Realms Engine</p>
+          <h2>91 worlds sealed inside an astrolab.</h2>
+          <p>
+            This is the stronger direction for Bellovore: an interactive realm
+            map where each world feels locked, alive, and dangerous to open.
+          </p>
+        </div>
+
+        <div class="orbitarium reveal" aria-label="Animated realm astrolab">
+          <div class="sealed-stars" data-sealed-worlds aria-hidden="true"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="engine-core">
+            <img src="./assets/emblem.png" alt="" />
+            <strong>91</strong>
+            <span>sealed worlds</span>
+          </div>
+          <button class="world-node node-a" type="button">
+            <span>Temporalis</span>
+          </button>
+          <button class="world-node node-b" type="button">
+            <span>Cronopolis</span>
+          </button>
+          <button class="world-node node-c" type="button">
+            <span>Mount Drakos</span>
+          </button>
+          <button class="world-node node-d" type="button">
+            <span>The Forge</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="characters" class="characters-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Characters</p>
+          <h2>Characters should step forward like mythic apparitions.</h2>
+          <p>
+            Each major character deserves a full cinematic presentation, not
+            just a small card. Think sealed portraits, dossiers, powers, costs,
+            voice lines, and dedicated character pages.
+          </p>
+        </div>
+
+        <div id="character-theater" class="character-theater reveal" data-character-theater>
+          <div class="theater-backdrop" aria-hidden="true"></div>
+          <div class="theater-controls" aria-label="Character controls">
+            <button type="button" data-prev-character>Previous</button>
+            <button type="button" data-next-character>Next</button>
+          </div>
+
+          <div class="character-stage" aria-label="3D character stage">
+            <button
+              class="character-3d is-active"
+              type="button"
+              data-character-card="Bellovore"
+              style="--x: -34%; --z: 120px; --ry: -10deg; --pos: 7% center"
+            >
+              <span class="character-portrait" aria-hidden="true"></span>
+              <span class="character-sigil" aria-hidden="true"></span>
+              <strong>Bellovore</strong>
+              <em>Architect of Time</em>
+            </button>
+            <button
+              class="character-3d"
+              type="button"
+              data-character-card="Anavria"
+              style="--x: -10%; --z: 30px; --ry: -4deg; --pos: 50% center"
+            >
+              <span class="character-portrait" aria-hidden="true"></span>
+              <span class="character-sigil" aria-hidden="true"></span>
+              <strong>Anavria</strong>
+              <em>Memory Flame</em>
+            </button>
+            <button
+              class="character-3d"
+              type="button"
+              data-character-card="Diavore"
+              style="--x: 14%; --z: 30px; --ry: 4deg; --pos: 72% center"
+            >
+              <span class="character-portrait" aria-hidden="true"></span>
+              <span class="character-sigil" aria-hidden="true"></span>
+              <strong>Diavore</strong>
+              <em>World Walker</em>
+            </button>
+            <button
+              class="character-3d"
+              type="button"
+              data-character-card="Drakkenvorax"
+              style="--x: 38%; --z: -20px; --ry: 12deg; --pos: 94% center"
+            >
+              <span class="character-portrait" aria-hidden="true"></span>
+              <span class="character-sigil" aria-hidden="true"></span>
+              <strong>Drakkenvorax</strong>
+              <em>Truth Breaker</em>
+            </button>
+          </div>
+
+          <aside class="character-dossier">
+            <p class="eyebrow">Selected Fragment</p>
+            <h3 data-dossier-name>Bellovore</h3>
+            <p data-dossier-line>
+              He can shape the hour, but not escape what it demands.
+            </p>
+            <dl>
+              <div>
+                <dt>Power</dt>
+                <dd data-dossier-power>Temporal architecture</dd>
+              </div>
+              <div>
+                <dt>Cost</dt>
+                <dd data-dossier-cost>Every saved moment returns as debt</dd>
+              </div>
+              <div>
+                <dt>Signal</dt>
+                <dd data-dossier-signal>Gold chronoglyph</dd>
+              </div>
+            </dl>
+            <button type="button" data-open-character-file>Open Character File</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="echo" class="echo-section">
+        <div class="echo-terminal reveal">
+          <p class="eyebrow">The Echo</p>
+          <h2>Ask the archive. Receive a fragment.</h2>
+          <form class="echo-form" data-echo-form>
+            <label for="echo-word">Echo word</label>
+            <input id="echo-word" type="text" value="time" autocomplete="off" />
+            <button type="submit">Ask</button>
+          </form>
+          <output class="echo-output" data-echo-output>
+            The hour does not answer. It remembers.
+          </output>
+          <p class="echo-status" data-echo-status>The archive is awake.</p>
+        </div>
+      </section>
+
+      <section id="teaser" class="teaser-section">
+        <div class="teaser-copy reveal">
+          <p class="eyebrow">Teaser</p>
+          <h2>The video should feel like an artifact, not a content block.</h2>
+        </div>
+
+        <div class="video-shell reveal" data-video-shell>
+          <video
+            class="teaser-video"
+            src="./media/bellovore-teaser.mp4"
+            poster="./assets/intro-gateway.webp"
+            playsinline
+            muted
+            loop
+            controls
+          ></video>
+          <button class="video-play" type="button" aria-label="Play teaser">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14l11-7L8 5Z" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section id="circle" class="circle-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Inner Circle</p>
+          <h2>The first fragment should arrive like a seal breaking.</h2>
+          <form class="inner-form">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="address for the seal" />
+            <button type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 2 11 13" />
+                <path d="m22 2-7 20-4-9-9-4 20-7Z" />
+              </svg>
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="teaser-modal" data-teaser-modal hidden>
+      <div class="modal-rift" aria-hidden="true"></div>
+      <button class="modal-close" type="button" data-close-teaser aria-label="Close teaser">
+        Close
+      </button>
+      <div class="modal-frame">
+        <p>Transmission from the sealed archive</p>
+        <video
+          class="modal-video"
+          src="./media/bellovore-teaser.mp4"
+          poster="./assets/intro-gateway.webp"
+          playsinline
+          muted
+          loop
+          controls
+        ></video>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>Bellovore</span>
+      <button type="button" data-replay-intro>Replay Intro</button>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
